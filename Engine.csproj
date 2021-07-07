@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <LangVersion>9</LangVersion>
+    <IsPackable>false</IsPackable>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Company>Tangent</Company>
+    <PublishSingleFile>true</PublishSingleFile>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishTrimmed>true</PublishTrimmed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ColorMine" Version="1.2.0" />
+    <PackageReference Include="DeBroglie" Version="1.0.0" />
+    <PackageReference Include="DotnetNoise" Version="1.0.0" />
+    <PackageReference Include="fasterflect" Version="3.0.0" />
+    <PackageReference Include="HPCsharp" Version="3.16.1" />
+    <PackageReference Include="LinqFaster" Version="1.0.0" />
+    <PackageReference Include="LiteNetLib" Version="0.9.5" />
+    <PackageReference Include="OpenTK.NetStandard" Version="1.0.7-prerelease" />
+    <PackageReference Include="QuadTrees" Version="1.0.3-cibuild0027" />
+    <PackageReference Include="SFML.Net" Version="2.5.0" />
+    <PackageReference Include="TGUI.Net.win-x64" Version="0.8.8.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Source\Engine\Assets\**" />
+    <EmbeddedResource Include="Source\Engine\Core\Graphics\Shaders\**" />
+
+    <EmbeddedResource Include="Source\Game\Experiments\Particles\Assets\**" />
+    <EmbeddedResource Include="Source\Game\Experiments\Camera\Assets\**" />
+
+	  <EmbeddedResource Include="Source\Game\Games\Breakout\Assets\**" />
+	  <EmbeddedResource Include="Source\Game\Games\Snake\Assets\**" />
+  </ItemGroup>
+  
+</Project>
